@@ -3,34 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects – Ben Shpigel</title>
+    <!-- <title>Projects – Ben Shpigel</title> -->
     <link rel="stylesheet" href="style.css">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow-y: auto;
+            box-sizing: border-box;
+        }
+        .page-wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main.projects-container {
+            flex: 1;
+            margin-top: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            main.projects-container {
+                margin-top: 6rem;
+                padding: 0 1rem;
+            }
+        }
+
+        .site-nav {
+            width: 100%;
+            height: 3.5rem;
+            background-color: #E1BE78;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            padding: 0.5rem;
+        }
+
+        .project-list {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            padding: 2rem;
+            list-style: none;
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
-    <nav>
-    <a href="index.html">Home</a> |
-    <a href="projects.html">Projects</a>
+    <div class="page-wrapper">
+    <nav class="site-nav">
+        <a href="index.html">Home</a> |
+        <a href="projects.html">Projects</a>
     </nav>
-    <hr>
 
-    <h1>Projects</h1>
-    <ul>
-        <li><a href="https://github.com/shpigelben/smoke-simulation">Smoke Simulation</a> – A model for turbulent smoke particles from a chimney</li>
-        <li>More projects coming soon...</li>
-    </ul>
+    <main class="projects-container">
+        <h1 class="projects-title">Projects</h1>
+        <ul class="project-list">
+            <li>
+                <a href="https://github.com/shpigelben/smoke-simulation" target="_blank" class="project-card">
+                    <div class="project-image" style="background-image: url('images/cover_smoke_simulation.png');"></div>
+                    <div class="project-title">Smoke Simulation</div>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="project-card">
+                    <div class="project-image" style="background-color: #d8d8d8;"></div>
+                    <div class="project-title">Coming Soon</div>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="project-card">
+                    <div class="project-image" style="background-color: #ccc;"></div>
+                    <div class="project-title">Project 3</div>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="project-card">
+                    <div class="project-image" style="background-color: #bbb;"></div>
+                    <div class="project-title">Project 4</div>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="project-card">
+                    <div class="project-image" style="background-color: #aaa;"></div>
+                    <div class="project-title">Project 5</div>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="project-card">
+                    <div class="project-image" style="background-color: #999;"></div>
+                    <div class="project-title">Project 6</div>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="project-card">
+                    <div class="project-image" style="background-color: #888;"></div>
+                    <div class="project-title">Project 7</div>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="project-card">
+                    <div class="project-image" style="background-color: #777;"></div>
+                    <div class="project-title">Project 8</div>
+                </a>
+            </li>
+        </ul>
+    </main>
 
-<footer>
-    <hr>
-    <p><a href="mailto:shpigelben92@gmail.com">shpigelben92@gmail.com</a> |
-       <a href="CV_Ben_Shpigel.pdf" target="_blank">CV</a> |
-       <a href="https://github.com/shpigelben" target="_blank">GitHub</a> |
-       <a href="https://linkedin.com/in/ben-shpigel" target="_blank">LinkedIn</a>
-    </p>
-</footer>
+    <footer class="site-footer">
+        <p>
+            <a href="mailto:shpigelben92@gmail.com">shpigelben92@gmail.com</a> |
+            <a href="CV_Ben_Shpigel.pdf" target="_blank">CV</a> |
+            <a href="https://github.com/shpigelben" target="_blank">GitHub</a> |
+            <a href="https://linkedin.com/in/ben-shpigel" target="_blank">LinkedIn</a>
+        </p>
+    </footer>
+    </div>
 
 </body>
 
 
 
 </html>
-
